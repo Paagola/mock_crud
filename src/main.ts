@@ -1,9 +1,21 @@
-const url = "http://localhost:3000/clientes"; // el servidor json corriendo
+import { asyncWrapProviders } from "async_hooks";
 
-async function mostrarDatos() {
-    const res = await fetch(url);
+const url = "http://localhost:3000"; // el servidor json corriendo
+
+async function mostrarDatosClientes() {
+    const res = await fetch(url+"/clientes");
     const datos = await res.json();
     console.log(datos);
 }
 
-mostrarDatos();
+async function mostrarDatosPedidos() {
+    const res = await fetch(url+"/pedidos");
+    const datos = await res.json();
+    console.log(datos)
+}
+
+
+mostrarDatosClientes();
+
+mostrarDatosPedidos();
+
