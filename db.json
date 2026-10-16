@@ -1,0 +1,13 @@
+{
+  "clientes": [
+    { "id": 1, "nombre": "Ana Ruiz", "ciudad": "Málaga" },
+    { "id": 2, "nombre": "Carlos Pérez", "ciudad": "Sevilla" },
+    { "id": 3, "nombre": "Marta Gil", "ciudad": "Granada" }
+  ],
+  "pedidos": [
+    { "id": 1, "producto": "Portátil 14\"", "importe": 849.9, "clienteId": 1 },
+    { "id": 2, "producto": "Ratón inalámbrico", "importe": 24.5, "clienteId": 1 },
+    { "id": 3, "producto": "Monitor 27\"", "importe": 219, "clienteId": 2 },
+    { "id": 4, "producto": "Auriculares", "importe": 59.99, "clienteId": 3 }
+  ]
+}
